@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import logo from "../images/logo.jpeg";
 import food from "../images/food.jpg";
-import "./login.css";
+import "../styles/login.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { auth } from "../config/firebase-config";

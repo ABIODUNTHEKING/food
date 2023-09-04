@@ -1,6 +1,6 @@
 import foods from "../foods";
 import { useOutletContext } from "react-router-dom";
-import "./menu.css";
+import "../styles/menu.css";
 import { useContext } from "react";
 import { FoodContext } from "../state_manager/FoodContextProvider";
 

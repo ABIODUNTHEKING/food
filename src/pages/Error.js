@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { auth } from "../config/firebase-config";
 import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
-import "./error.css";
+import "../styles/error.css";
 
 export default function Error() {
   const [pageName, setPageName] = useState("Login Page");

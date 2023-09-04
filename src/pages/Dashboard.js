@@ -1,4 +1,4 @@
-import "./dashboard.css";
+import "../styles/dashboard.css";
 import { auth } from "../config/firebase-config";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
