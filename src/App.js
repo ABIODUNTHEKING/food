@@ -9,10 +9,11 @@ import FixedContent from "./components/FixedContent";
 import Menu from "./pages/Menu";
 import Error from "./pages/Error";
 import AuthorizedUser from "./components/AuthorizedUser";
+import { FoodContextProvider } from "./state_manager/FoodContextProvider";
 
 function App() {
   return (
-    <>
+    <FoodContextProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
@@ -27,7 +28,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <ToastContainer limit="3" />
-    </>
+    </FoodContextProvider>
   );
 }
 

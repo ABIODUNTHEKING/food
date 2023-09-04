@@ -1,15 +1,20 @@
 import { useLocation } from "react-router-dom";
 import profile from "../images/no image.jpg";
+import { memo, useContext } from "react";
+import { FoodContext } from "../state_manager/FoodContextProvider";
 import "./navBar.css";
 
-const NavBar = ({ handleBarOnClick, handleOrderDisplay, selectedFoods }) => {
-  const pageTitle = useLocation().state
+const NavBar = ({ handleBarOnClick, handleOrderDisplay }) => {
+  const { selectedFoods } = useContext(FoodContext);
+  const pageTitle = useLocation().state;
   return (
     <section className="navBar">
       <div className="profileInfo">
         <div className="display" onClick={handleBarOnClick}>
           <i className="fa-solid fa-bars bar" id="bar"></i>
-          <h2 id="page-title" className="pageTitle">{pageTitle}</h2>
+          <h2 id="page-title" className="pageTitle">
+            {pageTitle}
+          </h2>
         </div>
         <div className="userInfo">
           <ul>
@@ -33,4 +38,4 @@ const NavBar = ({ handleBarOnClick, handleOrderDisplay, selectedFoods }) => {
   );
 };
 
-export default NavBar;
+export default memo(NavBar);

@@ -1,9 +1,12 @@
 import foods from "../foods";
 import { useOutletContext } from "react-router-dom";
 import "./menu.css";
+import { useContext } from "react";
+import { FoodContext } from "../state_manager/FoodContextProvider";
 
 export default function Menu() {
-  let [createOrder, selectedFoods, sideBarDisplay] = useOutletContext();
+  let { createOrder, selectedFoods } = useContext(FoodContext);
+  let sideBarDisplay = useOutletContext();
 
   let orders = foods.map((food) => {
     const orderExists = selectedFoods.find(

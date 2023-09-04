@@ -12,7 +12,8 @@
   display: none;
 }
 
-.food, .big-food {  
+.food,
+.big-food {
   padding: 10px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -22,11 +23,12 @@
   position: relative;
 }
 
-.big-food{
+.big-food {
   width: 350px;
 }
 
-.food img, .big-food img {
+.food img,
+.big-food img {
   width: 255px;
   height: 250px;
   display: block;
@@ -34,7 +36,7 @@
   border-radius: 10px;
 }
 
-.big-food img{
+.big-food img {
   width: 300px;
 }
 
@@ -58,8 +60,6 @@
   left: 30px;
   font-weight: bold;
   background-color: rgb(183, 190, 206);
-  
-  
 }
 
 .createButton {
@@ -72,61 +72,56 @@
   transition: 1s;
 }
 
-.createButton:hover{
+.createButton:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: white;
   background-color: #384d50;
   border: 2px solid white;
 }
 
-
 @media screen and (max-width: 1025px) {
-  .menu{
+  .menu {
     grid-template-columns: repeat(2, 1fr);
-  }  
+  }
 
-  .food{
+  .food {
     width: 99%;
   }
 
-  .food img{
+  .food img {
     width: 95%;
   }
 
-  .big-food{
+  .big-food {
     width: 100%;
   }
 
-  .big-food img{
+  .big-food img {
     width: 95%;
   }
 }
 
 @media screen and (max-width: 700px) {
-
-  .menu{
+  .menu {
     padding: 0;
     grid-template-columns: 1fr;
     padding-left: 10px;
     padding-top: 10px;
     width: 80vw;
   }
-  .food{
+  .food {
     width: 70%;
-    
   }
 
-  .big-food{
+  .big-food {
     width: 95%;
   }
 
-  .big-food img{
+  .big-food img {
     width: 90%;
   }
-  .food img{
+  .food img {
     width: 90%;
     height: 190px;
   }
-
-  
 }

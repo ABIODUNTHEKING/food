@@ -124,7 +124,7 @@
   transition: 1s;
 }
 
-.buyButton:hover{
+.buyButton:hover {
   background-color: #384d50;
   color: white;
   border: 2px solid white;
@@ -132,19 +132,19 @@
 }
 
 @media screen and (max-width: 700px) {
-  .orderHead{
+  .orderHead {
     font-size: 10px;
   }
-  .product{
+  .product {
     gap: 10px;
   }
-  .productName{
+  .productName {
     font-size: 15px;
   }
-  .productPrice{
+  .productPrice {
     font-size: 12px;
   }
-  .orders{
+  .orders {
     width: 60vw;
   }
 }

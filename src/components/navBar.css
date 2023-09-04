@@ -28,7 +28,7 @@ h2 {
   cursor: pointer;
 }
 
-.orderCount{
+.orderCount {
   cursor: pointer;
 }
 
@@ -50,18 +50,17 @@ h2 {
   gap: 30px;
 }
 
-
 @media screen and (max-width: 500px) {
-  .pageTitle{
+  .pageTitle {
     font-size: 16px;
   }
-  .profileImg{
+  .profileImg {
     width: 25px;
   }
-  .cart{
+  .cart {
     font-size: 18px;
   }
-  .orderCount{
+  .orderCount {
     font-size: 15px;
   }
 }

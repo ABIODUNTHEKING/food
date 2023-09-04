@@ -1,9 +1,11 @@
 import { toast } from "react-toastify";
 import "./order.css";
 import SelectedOrder from "./SelectedOrder";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { FoodContext } from "../state_manager/FoodContextProvider";
 
-function Order({ handleOrderDisplay, selectedFoods, setSelectedFoods }) {
+function Order({ handleOrderDisplay }) {
+  const { selectedFoods, setSelectedFoods } = useContext(FoodContext);
   function PurchaseOrder() {
     if (selectedFoods.length === 0) {
       toast.error("No order has been made yet");
@@ -38,11 +40,7 @@ function Order({ handleOrderDisplay, selectedFoods, setSelectedFoods }) {
         {selectedFoods.length === 0 && (
           <p className="noOrder">You have not made any order yet</p>
         )}
-        <SelectedOrder
-          selectedFoods={selectedFoods}
-          setSelectedFoods={setSelectedFoods}
-          setTotalPrice={setTotalPrice}
-        />
+        <SelectedOrder setTotalPrice={setTotalPrice} />
       </div>
 
       <div className="acceptOrder">

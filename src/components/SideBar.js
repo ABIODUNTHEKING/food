@@ -21,8 +21,8 @@ const SideBar = () => {
               style={({ isActive }) => (isActive ? activeLink : null)}
             >
               <p>
-                <i className="fa-solid fa-user"></i> {window.innerWidth >= 700 && "Profile"}
-                {console.log(window.innerWidth)}
+                <i className="fa-solid fa-user"></i>{" "}
+                {window.innerWidth >= 700 && "Profile"}
               </p>
             </NavLink>
           </li>
@@ -34,7 +34,8 @@ const SideBar = () => {
               style={({ isActive }) => (isActive ? activeLink : null)}
             >
               <p id="first-link">
-                <i className="fa-solid fa-cart-shopping"></i> {window.innerWidth >= 700 && "Menu"}
+                <i className="fa-solid fa-cart-shopping"></i>{" "}
+                {window.innerWidth >= 700 && "Menu"}
               </p>
             </NavLink>
           </li>

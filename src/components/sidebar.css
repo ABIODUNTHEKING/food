@@ -46,9 +46,8 @@
   cursor: pointer;
 }
 
-
 @media screen and (max-width: 435px) {
-  .logo{
+  .logo {
     width: 2.5em;
   }
 }

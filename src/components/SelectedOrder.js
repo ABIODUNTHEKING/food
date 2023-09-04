@@ -1,10 +1,8 @@
-import { useState } from "react";
+import { useState, useContext, memo } from "react";
+import { FoodContext } from "../state_manager/FoodContextProvider";
 
-export default function SelectedOrder({
-  selectedFoods,
-  setSelectedFoods,
-  setTotalPrice,
-}) {
+function SelectedOrder({ setTotalPrice }) {
+  const { selectedFoods, setSelectedFoods } = useContext(FoodContext);
   let structureOfSelectedFoods = selectedFoods.map((selectedFoodDetail) => {
     return (
       <OrderDetail
@@ -67,7 +65,9 @@ export default function SelectedOrder({
           />
           <div>
             <p className="productName">{selectedFoodDetail.name}</p>
-            <p className="productPrice">#{selectedFoodDetail.price.toLocaleString()}</p>
+            <p className="productPrice">
+              #{selectedFoodDetail.price.toLocaleString()}
+            </p>
           </div>
         </div>
         <div className="productStatus">
@@ -114,3 +114,5 @@ export default function SelectedOrder({
 
   return <>{structureOfSelectedFoods}</>;
 }
+
+export default memo(SelectedOrder);
