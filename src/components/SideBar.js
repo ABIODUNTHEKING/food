@@ -1,6 +1,6 @@
 import logo from "../images/logo.jpeg";
 import { NavLink } from "react-router-dom";
-import "./sidebar.css";
+import "../styles/sidebar.css";
 
 const SideBar = () => {
   let activeLink = {

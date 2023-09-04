@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import profile from "../images/no image.jpg";
 import { memo, useContext } from "react";
 import { FoodContext } from "../state_manager/FoodContextProvider";
-import "./navBar.css";
+import "../styles/navBar.css";
 
 const NavBar = ({ handleBarOnClick, handleOrderDisplay }) => {
   const { selectedFoods } = useContext(FoodContext);

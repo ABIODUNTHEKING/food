@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import "./order.css";
+import "../styles/order.css";
 import SelectedOrder from "./SelectedOrder";
 import { useState, useEffect, useContext } from "react";
 import { FoodContext } from "../state_manager/FoodContextProvider";
