@@ -1,0 +1,268 @@
+.login-page,
+.sign-up-page {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content,
+.sign-up-content {
+  display: flex;
+  height: 95%;
+  width: 80%;
+  background-color: #384d50;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 30px;
+}
+
+.image {
+  width: 50%;
+}
+
+.main-food {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.userData {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 30px 10px;
+  height: 100%;
+  width: 30rem;
+}
+
+.userData div {
+  width: 25rem;
+  padding: 0;
+}
+
+.intro {
+  margin-bottom: 30px;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.mobile_logo {
+  display: none;
+}
+
+.heading {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  /* margin-bottom: 5px; */
+}
+
+.sub-heading {
+  color: rgba(255, 255, 255, 0.623);
+}
+
+.userData form {
+  display: block;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 0.5px solid rgba(0, 0, 0, 0.26);
+  outline: 0;
+  margin: 10px 0;
+  background-color: #384d50;
+  color: white;
+}
+label {
+  color: rgba(255, 255, 255, 0.432);
+}
+
+.login-passwordContainer,
+.confirmPassword {
+  display: flex;
+  border: 0.5px solid rgba(0, 0, 0, 0.26);
+  border-radius: 5px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.login-passwordInput {
+  width: 90%;
+  border: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.eye {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  color: white;
+}
+
+.submitButton {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #5a6e74;
+  border: 1px solid white;
+  box-shadow: 3px 3px 3px solid rgba(0, 0, 0, 1);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.submitButton:hover {
+  box-shadow: 2px 2px 4px 2px #5a6e74;
+}
+
+.no-account,
+.account {
+  color: #5a6e74;
+}
+
+.no-account a,
+.account a {
+  color: white;
+  margin: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  .sign-up-page, .login-page {
+    height: 100%;
+  }
+
+  .login-content,
+  .sign-up-content {
+    height: 90%;
+    display: block;
+    margin-top: 20px;
+    width: 90%;
+    padding: 10px 15px;
+  }
+ 
+  .image {
+    width: 100%;
+    height: 40%;
+    margin-bottom: 15px;
+  }
+
+  .login-content .image{
+    height: 200px;
+    margin-bottom: 50px;
+  }
+
+  .food {
+    width: 100%;
+    height: 100%;
+  }
+  .intro {
+    height: 15%;
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .sign-up-content .intro {
+    height: 10%;
+    margin-top: 0;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .sub-heading {
+    font-size: 15px;
+  }
+
+  .userData div {
+    width: 100%;
+  }
+  .userData {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sign-up-content .userData {
+    height: 70%;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  .userData form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .sign-up-content .userData form {
+    height: 82%;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .userData form::-webkit-scrollbar {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+  input {
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 0.26);
+    padding: 15px;
+  }
+  .sign-up-content input {
+    padding: 10px;
+  }
+
+  .login-passwordContainer {
+    border: 2px solid rgba(0, 0, 0, 0.26);
+  }
+
+  .login-passwordInput {
+    padding: 10px 0;
+    padding-left: 10px;
+  }
+  .submitButton {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .mobile_logo {
+    display: block;
+    height: 60px;
+    width: 60px;
+    margin: 10px auto;
+  }
+  .no-account {
+    margin-top: 20px;
+  }
+
+  .account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    margin-top: 10px;
+  }
+}

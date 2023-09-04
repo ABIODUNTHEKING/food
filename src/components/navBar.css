@@ -1,0 +1,67 @@
+.profileInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+h2 {
+  color: #384d50;
+  cursor: pointer;
+}
+
+.bar {
+  font-size: 25px;
+  color: #384d50;
+  cursor: pointer;
+}
+
+.cart {
+  font-size: 20px;
+  color: #384d50;
+  cursor: pointer;
+}
+
+.orderCount{
+  cursor: pointer;
+}
+
+.profileImg {
+  width: 35px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(0, 0, 0, 0.301);
+}
+
+.userInfo {
+  display: flex;
+}
+
+.userInfo ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .pageTitle{
+    font-size: 16px;
+  }
+  .profileImg{
+    width: 25px;
+  }
+  .cart{
+    font-size: 18px;
+  }
+  .orderCount{
+    font-size: 15px;
+  }
+}

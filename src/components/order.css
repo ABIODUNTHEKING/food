@@ -1,0 +1,150 @@
+.orders {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25vw;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 100vh;
+  overflow: scroll;
+  padding: 10px 20px;
+}
+
+.orders::-webkit-scrollbar {
+  display: none;
+}
+
+.cancel {
+  font-size: 15px;
+  color: #384d50;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #384d50;
+}
+
+.cancel:hover {
+  background-color: #384d5048;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 0;
+}
+
+.productImg {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+.productName {
+  font-size: 20px;
+  font-weight: 600;
+  color: #384d50;
+}
+
+.productPrice {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.productStatus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.productStatus div {
+  border: 1px solid#384d50;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.productStatus div span {
+  padding: 0 10px;
+}
+
+.plusButton,
+.minusButton,
+.cancelButton {
+  background-color: transparent;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.plusButton {
+  border-left: 1px solid #384d50;
+}
+
+.minusButton,
+.cancelButton {
+  border-right: 1px solid #384d50;
+}
+
+.orderHead {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acceptOrder {
+  border-top: 1px solid #384d50;
+  font-size: 20px;
+  color: #384d50;
+  padding-right: 10px;
+}
+
+.totalPrice {
+  text-align: right;
+  padding: 10px 0;
+}
+
+.trash {
+  color: rgba(255, 0, 0, 0.356);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.buyButton {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: 2px solid #384d50;
+  background-color: white;
+  color: #384d50;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.buyButton:hover{
+  background-color: #384d50;
+  color: white;
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media screen and (max-width: 700px) {
+  .orderHead{
+    font-size: 10px;
+  }
+  .product{
+    gap: 10px;
+  }
+  .productName{
+    font-size: 15px;
+  }
+  .productPrice{
+    font-size: 12px;
+  }
+  .orders{
+    width: 60vw;
+  }
+}
